@@ -47,29 +47,34 @@ export default function NavBar({ sectionRefs }) {
   });
 
   return (
-<header ref={navBar} className="fixed top-0 z-50 w-full bg-secondary-100 px-5 py-3">
-  <nav className="flex justify-center items-center space-x-7 pt-4 font-grotesk text-body-3">
-    <a href="#about" className="group relative">
-      <span>about</span>
-      <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
-    </a>
-    <a href="#services" className="group relative">
-      <span>services</span>
-      <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
-    </a>
-    <a href="#projects" className="group relative">
-      <span>projects</span>
-      <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
-    </a>
-    <a ref={cta} className="button group relative hover:bg-transparent flex items-center" href="#contact">
-      <span className="relative w-fit">
-        <span className="absolute bottom-0 h-[0.15em] w-0 bg-secondary-700 opacity-90 duration-300 ease-out group-hover:w-full"></span>
-        <span>Let&apos;s Talk.</span>
-      </span>
-    </a>
-  </nav>
-</header>
-
-
+    <header
+      ref={navBar}
+      className="fixed top-0 z-50 w-full bg-secondary-100 px-5 py-3"
+    >
+      <nav className="flex items-center justify-center space-x-7 pt-4 font-grotesk text-body-3">
+        <a href="#about" className="group relative">
+          <span>about</span>
+          <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
+        </a>
+        <a href="#services" className="group relative">
+          <span>services</span>
+          <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
+        </a>
+        <a href="#projects" className="group relative">
+          <span>projects</span>
+          <span className="absolute bottom-0 left-0 h-[0.125em] w-0 rounded-full bg-secondary-600 duration-300 ease-in-out group-hover:w-full"></span>
+        </a>
+        <a
+          ref={cta}
+          className="button group relative flex items-center hover:bg-transparent"
+          href="#contact"
+        >
+          <span className="relative w-fit">
+            <span className="absolute bottom-0 h-[0.15em] w-0 bg-secondary-700 opacity-90 duration-300 ease-out group-hover:w-full"></span>
+            <span>Let&apos;s Talk.</span>
+          </span>
+        </a>
+      </nav>
+    </header>
   );
 }

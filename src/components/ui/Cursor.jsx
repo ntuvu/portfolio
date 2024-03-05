@@ -2,7 +2,7 @@ import { useEffect, useState, useRef } from "react";
 import { gsap } from "gsap";
 
 export default function Cursor() {
-  const [cursor, setCursor] = useState({ x: 0, y: 0 });
+  // const [cursor, setCursor] = useState({ x: 0, y: 0 });
   const curs = useRef(null);
   const svg = useRef(null);
 
@@ -42,13 +42,13 @@ export default function Cursor() {
     };
   }, []);
 
-  const { x, y } = cursor;
+  // const { x, y } = cursor;
 
   return (
     <div
-      ref={curs}
-      className="cursor pointer-events-none fixed left-1/2 top-1/2 z-[999] hidden h-3 w-3 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-secondary-600 sm:flex"
-      style={{ left: `${x}px`, top: `${y}px` }}
+      // ref={curs}
+      // className="cursor pointer-events-none fixed left-1/2 top-1/2 z-[999] hidden h-3 w-3 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-secondary-600 sm:flex"
+      // style={{ left: `${x}px`, top: `${y}px` }}
     >
       <svg
         ref={svg}
